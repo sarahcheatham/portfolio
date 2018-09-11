@@ -1,28 +1,128 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* css for header link at top of page */
+h2 > a {
+  position: relative;
+  color: #e26559;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h2 > a:hover {
+  color: #e26559;
 }
 
-.App-title {
-  font-size: 1.5em;
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: .5px;
+  bottom: 0;
+  left: 0;
+  background-color: #e26559;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+h2 > a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-.App-intro {
-  font-size: large;
+.linkHeader{
+  font-family: como, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+
+}
+/* end of header css */
+
+.headerContent {
+  font-family: pacifico, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size : 28px;
+  color: #28272c;
+  margin-top: 20px;
+
+}
+/* end of header content */
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30%;
+  background-color:#FFEFD5;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.todo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-family: pacifico, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #FFEFD5;
 }
+
+.llamito {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: pacifico, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #FFDAB9;
+  color: #FFDAB9;
+}
+
+.tictactoe {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 125px;
+  font-family: pacifico, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #c1144d;
+  color: #c1144d;
+}
+
+.shoppingCart {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 125px;
+  font-family: pacifico, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #e26559;
+  color: #e26559;
+}
+
+.projectsHeader {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+.projectsH1 {
+  font-family: quimby-mayoral, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+
+@import url("https://use.typekit.net/ejt4bja.css");
+
