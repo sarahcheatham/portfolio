@@ -4,8 +4,9 @@ import './App.css';
 export default class ProjectHeader extends React.Component{
     render(){
         return(
-            <div className="projectsHeader">
-                <h1 className="projectsH1">Projects.</h1>
+            <div className="workcontainer">
+                <div className="yellowBar"></div>
+                <h1 className="projectsH1">work.</h1>
             </div>
         );
     }

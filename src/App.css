@@ -4,12 +4,12 @@
 /* css for header link at top of page */
 h2 > a {
   position: relative;
-  color: #e26559;
+  color: #223A5E;
   text-decoration: none;
 }
 
 h2 > a:hover {
-  color: #e26559;
+  color: #223A5E;
 }
 
 h2 > a:before {
@@ -19,7 +19,7 @@ h2 > a:before {
   height: .5px;
   bottom: 0;
   left: 0;
-  background-color: #e26559;
+  background-color: #223A5E;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -41,23 +41,37 @@ h2 > a:hover:before{
 }
 /* end of header css */
 
-.headerContent {
-  font-family: pacifico, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size : 28px;
-  color: #28272c;
-  margin-top: 20px;
+
+.workcontainer {
+  width: 100%;
+  height: 200px;
 
 }
-/* end of header content */
+.projectsH1 {
+  position: absolute;
+  top: 35px;
+  left: 17px;
+  font-family: quasimoda, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  color: #110c16;
+   
+}
+.yellowBar {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(247, 239, 102);
+  position: relative;
+  top: 95px;
+}
 
 .projectsContainer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 30% 30%;
-  background-color:#FFEFD5;
-  margin-top: 50px;
+  background-color:rgb(229, 239, 250);
+  margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -70,7 +84,7 @@ h2 > a:hover:before{
   font-family: pacifico, sans-serif;
   font-style: normal;
   font-weight: 300;
-  color: #FFEFD5;
+  color: rgb(229, 239, 250);
 }
 
 .llamito {
@@ -81,8 +95,8 @@ h2 > a:hover:before{
   font-family: pacifico, sans-serif;
   font-style: normal;
   font-weight: 300;
-  background-color: #FFDAB9;
-  color: #FFDAB9;
+  background-color: rgb(229, 239, 250);
+  color: rgb(229, 239, 250);
 }
 
 .tictactoe {
@@ -94,8 +108,8 @@ h2 > a:hover:before{
   font-family: pacifico, sans-serif;
   font-style: normal;
   font-weight: 300;
-  background-color: #c1144d;
-  color: #c1144d;
+  background-color: rgb(229, 239, 250);
+  color: rgb(229, 239, 250);
 }
 
 .shoppingCart {
@@ -107,21 +121,10 @@ h2 > a:hover:before{
   font-family: pacifico, sans-serif;
   font-style: normal;
   font-weight: 300;
-  background-color: #e26559;
-  color: #e26559;
+  background-color: rgb(229, 239, 250);
+  color: rgb(229, 239, 250);
 }
 
-.projectsHeader {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-}
-.projectsH1 {
-  font-family: quimby-mayoral, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 60px;
-}
 
 
 @import url("https://use.typekit.net/ejt4bja.css");
