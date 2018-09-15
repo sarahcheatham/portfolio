@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import TodoList from './todo'
 
 export default class Projects extends React.Component{
     render(){
         return(
             <div className="projectsContainer">
                 <div className="todo">
-                    Todo List
+                    <TodoList/>
                 </div>
-                <div className="llamito">
+                {/* <div className="llamito">
                     Llamito
                 </div>
                 <div className="tictactoe">
@@ -15,7 +16,7 @@ export default class Projects extends React.Component{
                 </div>
                 <div className="shoppingCart">
                      Shopping Cart
-                </div>
+                </div> */}
             </div> 
         );
     }

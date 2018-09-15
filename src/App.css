@@ -44,7 +44,8 @@ h2 > a:hover:before{
 
 .workcontainer {
   width: 100%;
-  height: 200px;
+  height: 75px;
+  margin-bottom: 0px;
 
 }
 .projectsH1 {
@@ -68,64 +69,26 @@ h2 > a:hover:before{
 
 .projectsContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 30% 30%;
-  background-color:rgb(229, 239, 250);
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: url(notebook2.jpg);
+  background-size: 100%;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .todo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
+  padding-top: 20px;
   font-family: pacifico, sans-serif;
   font-style: normal;
   font-weight: 300;
   color: rgb(229, 239, 250);
 }
-
-.llamito {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: pacifico, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background-color: rgb(229, 239, 250);
-  color: rgb(229, 239, 250);
-}
-
-.tictactoe {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 125px;
-  font-family: pacifico, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background-color: rgb(229, 239, 250);
-  color: rgb(229, 239, 250);
-}
-
-.shoppingCart {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 125px;
-  font-family: pacifico, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background-color: rgb(229, 239, 250);
-  color: rgb(229, 239, 250);
-}
-
-
 
 @import url("https://use.typekit.net/ejt4bja.css");
 
