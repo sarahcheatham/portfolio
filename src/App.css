@@ -68,9 +68,6 @@ h2 > a:hover:before{
 }
 
 .projectsContainer {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; */
   background-image: url(notebook2.jpg);
   background-size: 100%;
   margin-top: 30px;
@@ -81,16 +78,22 @@ h2 > a:hover:before{
 }
 
 .todo {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   margin-top: 50px;
   margin-bottom: 20px;
   padding-top: 20px;
-  font-family: pacifico, sans-serif;
-  font-style: normal;
-  font-weight: 300;
   color: rgb(229, 239, 250);
 }
+
+.imagesContainer{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.images{
+  width: 40%;
+}
+
 
 @import url("https://use.typekit.net/ejt4bja.css");
 
