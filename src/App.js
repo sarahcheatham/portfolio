@@ -7,14 +7,13 @@ import Images from './images.js'
 
 class App extends Component {
   state = {
-    image: []
+    links: ""
   }
   render() {
     return (
       <div className="App">
         <Header/>
         <ProjectsHeader/>
-        <Projects/>
         <Images/>
       </div>
     );
