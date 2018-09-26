@@ -14,12 +14,13 @@ export default class Images extends React.Component{
                     alt="llamito" 
                     id="image1"
                 />
-                <Button href="https://sarahcheatham.github.io/web-workbook/09week/checkpoint-3/" text="Play Llamito!"/>
+                <Button href="https://sarahcheatham.github.io/web-workbook/09week/checkpoint-3/" text="Play Llamito!" className="box"/>
                 <img 
                     src={Image2} 
                     alt="todo list" 
                     id="image2"
                 /> 
+                <Button href="https://sarahcheatham.github.io/todo/todo-list/" text="View My App" className="box2"/>
             </div>
         ) 
     }

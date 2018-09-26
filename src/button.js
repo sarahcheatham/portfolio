@@ -5,7 +5,7 @@ export default class Button extends React.Component{
    
     render(){
         return(
-            <span className="box">
+            <span className={this.props.className}>
                 <div className="overlay">
                 </div>
                 <div className="button">
