@@ -1,28 +1,179 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* css for header link at top of page */
+h2 > a {
+  position: relative;
+  color: #223A5E;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+h2 > a:hover {
+  color: #223A5E;
+}
+
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: .5px;
+  bottom: 0;
+  left: 0;
+  background-color: #223A5E;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+h2 > a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.linkHeader{
+  font-family: como, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+
+}
+/* end of header css */
+
+
+.workcontainer {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 0px;
+
+}
+.projectsH1 {
+  position: absolute;
+  top: 35px;
+  left: 17px;
+  font-family: quasimoda, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  color: #110c16;
+   
+}
+.yellowBar {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(247, 239, 102);
+  position: relative;
+  top: 95px;
+}
+
+.projectsContainer {
+  background-image: url(notebook2.jpg);
+  background-size: 100%;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 30px;
+  
+}
+
+.todo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: rgb(229, 239, 250);
+}
+
+.imagesContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 100px;
+  grid-gap: 50px;
+  
+}
+
+#image1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 80%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+#image2{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  padding-top: 45px;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5 ease;
+}
+.box:hover .overlay{
+  display: block;
+  background: rgba(0, 0 , 0, .3);
+}
+.box{
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+}
+.button{
+  position: absolute;
+  width: 500px;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+.button a{
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
   color: white;
+  border: solid 2px white;
+  z-index: 1;
 }
 
-.App-title {
-  font-size: 1.5em;
+.box:hover .button{
+  opacity: 1;
 }
 
-.App-intro {
-  font-size: large;
+.box2{
+  position: relative;
+  top: 0;
+  left: 0;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.box2:hover .overlay{
+  display: block;
+  background: rgba(0, 0 , 0, .3);
 }
+
+.box2:hover .button{
+  opacity: 1;
+}
+@import url("https://use.typekit.net/ejt4bja.css");
+
